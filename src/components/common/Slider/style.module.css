@@ -1,0 +1,15 @@
+.slider {
+  position: relative;
+}
+
+.slider > div {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+}

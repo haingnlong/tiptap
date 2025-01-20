@@ -1,0 +1,207 @@
+.tiptap-suite-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  padding-bottom: 170px;
+}
+
+.heading-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  text-wrap: balance;
+  font-family: "PolySans Median", sans-serif;
+  max-width: 900px;
+  font-size: 80px;
+  line-height: 76px;
+  font-weight: 600;
+}
+
+.heading-content > span:first-child,
+.heading-content > span:last-child {
+  font-family: "PolySans Slim", sans-serif;
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.heading-content > span:last-child {
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.list {
+  width: 90vw;
+  max-width: 1200px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 30px 0;
+}
+
+.link-item {
+  width: calc(33.3333333333% - 110px);
+  max-width: 100%;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  background-color: #fff;
+  border-radius: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 40px 40px 30px;
+  text-decoration: none;
+  transition: border-radius 0.3s cubic-bezier(0.65, 0, 0.35, 1),
+    box-shadow 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+  display: flex;
+  position: relative;
+  color: #0d0d0d;
+}
+
+.link-item * {
+  z-index: 50;
+}
+
+.link-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1.5rem;
+  background: white;
+  transition: all 0.25s cubic-bezier(0.65, 0, 0.35, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.03),
+    0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.link-item > div:first-child {
+  height: 50px;
+}
+
+.link-item > div:first-child img {
+  height: 100%;
+}
+
+.link-item > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-item > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: flex-start;
+}
+
+.item-title {
+  font-family: "PolySans Median", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.item-tag {
+  border: 1px solid #000;
+  border-radius: 8px;
+  flex: none;
+  padding: 5px 6px 3px;
+  font-family: "PolySans Median", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.15;
+  background-color: white;
+}
+
+.item-description {
+  opacity: 0.7;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "PolySans Slim", sans-serif;
+}
+
+.animation-link {
+  align-items: center;
+  padding: 18px 0 14px;
+  font-size: 16px;
+  line-height: 1.15;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  grid-column-gap: 8px;
+  color: #0d0d0d;
+  cursor: pointer;
+  font-family: "PolySans Median", sans-serif;
+  transition: scale 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    transform 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    border-radius 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.25s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.animation-link *,
+.animation-link::after {
+  transition: scale 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    transform 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    border-radius 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.25s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.animation-link::after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-size: contain;
+  mask: url(../../../assets//next-arrow.svg) no-repeat center / contain;
+  background-color: #0d0d0d;
+}
+
+.animation-link-content > span {
+  margin-top: 2px;
+}
+
+.link-item:hover {
+  box-shadow: none;
+  background-color: unset;
+  outline: none;
+  border-radius: 36px;
+}
+
+.link-item:hover::before {
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  border-radius: 50px;
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.06), 0 4px 10px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.03), 0 1px 8px rgba(0, 0, 0, 0.02);
+}
+
+.link-item:hover .animation-link span {
+  transform: translateX(20px);
+}
+
+.link-item:hover .animation-link img,
+.link-item:hover .animation-link:after {
+  transform: translateX(26px);
+}
+
+

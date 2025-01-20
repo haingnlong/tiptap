@@ -1,3 +1,11 @@
+body {
+  font-family: "PolySans Median", sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 .App {
   text-align: center;
 }
@@ -10,6 +18,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    
   }
 }
 
@@ -26,6 +35,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.test {
+  font-family: "PolySans Median";
+  font-size: 100px;
+
+  /* font-family: "PolySans Median", sans-serif;
+  font-family: "PolySans Slim", sans-serif; */
 }
 
 @keyframes App-logo-spin {

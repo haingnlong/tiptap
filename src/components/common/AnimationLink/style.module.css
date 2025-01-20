@@ -1,0 +1,79 @@
+.link {
+  border-radius: 10px;
+  align-items: center;
+  padding: 12px 10px 10px;
+  font-size: 16px;
+  line-height: 1.1;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  grid-column-gap: 8px;
+  color: white;
+  background-color: #141414f5;
+  cursor: pointer;
+  font-family: "PolySans Slim", sans-serif;
+  transition: scale 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    transform 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    border-radius 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.25s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.transparent-link {
+  color: #0d0d0d;
+  background-color: transparent;
+}
+
+.link img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg)
+    brightness(101%) contrast(104%);
+}
+
+.transparent-link img {
+  filter: invert(0%) sepia(3%) saturate(12%) hue-rotate(34deg) brightness(88%)
+    contrast(103%);
+}
+
+.link *,
+.link::after {
+  transition: scale 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    transform 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    border-radius 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.25s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link:hover {
+  border-radius: 15px;
+}
+
+.link:hover span {
+  transform: translateX(20px);
+}
+
+.link:hover img,
+.link:hover:after {
+  transform: translateX(30px);
+}
+
+.link::after {
+  background-color: white;
+}
+
+.transparent-link::after {
+  background-color: #0d0d0d;
+}
+
+.link::after, .transparent-link::after {
+  content: "";
+  position: absolute;
+  left: -18px;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-size: contain;
+  mask: url(../../../assets//next-arrow.svg) no-repeat center / contain;
+}
+
+.link-content > span {
+  margin-top: 2px;
+}
