@@ -2026,21 +2026,6 @@
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-"@tiptap/core@^2.11.2":
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/@tiptap/core/-/core-2.11.2.tgz#d9d4bd912ee12d4127180e60d2672605c208baf7"
-  integrity sha512-Z437c/sQg31yrRVgLJVkQuih+7Og5tjRx6FE/zE47QgEayqQ9yXH0LrTAbPiY6IfY1X+f2A0h3e5Y/WGD6rC3Q==
-
-"@tiptap/extension-text-style@^2.11.2":
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/@tiptap/extension-text-style/-/extension-text-style-2.11.2.tgz#5a7f068c251b39b07893110cbc546004944f880c"
-  integrity sha512-RAa7BTwEOJRZN3EB2lg03KXyu7JC/Ce96cerh3D0Fo78yrtKOArPaiVHoTki6ZEIG43ccHEit1PPjMYxivPPeg==
-
-"@tobiasafischer/tiptap-extension-font-size@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@tobiasafischer/tiptap-extension-font-size/-/tiptap-extension-font-size-1.0.6.tgz#777245066c8eb683a86df14fc9ac626576e35289"
-  integrity sha512-dieXT2fAOCEjwyxpaKLJY49kOGXlCANgMkVkZRCRz07Bso3ZYd0cDYZ2ECipJeM3DxfjbNxm7d+5Ocs97q6cyA==
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
