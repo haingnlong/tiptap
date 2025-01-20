@@ -2,6 +2,7 @@ import { FC } from "react";
 import styles from "./style.module.css";
 import { TiptapSuiteData } from "../../../constants";
 import { NextArrow } from "../../../assets";
+import { ShadowLink } from "../../common";
 
 export const TiptapSuite: FC = () => {
   return (
@@ -44,6 +45,7 @@ export const TiptapSuite: FC = () => {
           </a>
         ))}
       </div>
+      <ShadowLink url="/" title="Explore all extensions" />
     </section>
   );
 };

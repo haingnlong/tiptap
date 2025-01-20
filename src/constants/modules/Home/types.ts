@@ -11,3 +11,17 @@ export type SliderListItemData = {
   duration: number;
   toRight: boolean;
 }
+
+export type TemplateListItemData = {
+  image: string;
+  title: string;
+  description: string;
+  url: string;
+  inDevelop: boolean;
+}
+
+export type UseCasesListItemData = {
+  image: string;
+  icon: string;
+  title: string;
+}

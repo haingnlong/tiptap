@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 120px;
+  padding-bottom: 170px;
 }
 
 .heading-content {

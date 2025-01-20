@@ -2,7 +2,7 @@ import { FC, useEffect, useRef, useState } from "react";
 import styles from "./style.module.css";
 import { TypeAnimation } from "react-type-animation";
 import { BrandLogoListData } from "../../../constants";
-import { AnimationButton, Slider } from "../../common";
+import { AnimationButton, ShadowLink, Slider } from "../../common";
 
 export const Hero: FC = () => {
   const [isIntersecting, setIntersecting] = useState<boolean>(true);
@@ -74,12 +74,12 @@ export const Hero: FC = () => {
         </div>
         <div className={styles["link-group"]}>
           <AnimationButton url="/" title="Sign up free" />
-          <a href="/">Try it live</a>
+          <ShadowLink url="/" title="Try it free" />
         </div>
       </div>
       <Slider duration={80}>
         {BrandLogoListData.map((item, index) => (
-          <Slider.Slide>
+          <Slider.Slide key={item.imgUrl}>
             <img src={item.imgUrl} alt="img" key={index} />
           </Slider.Slide>
         ))}

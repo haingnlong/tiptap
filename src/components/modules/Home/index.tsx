@@ -1,12 +1,14 @@
 import { FC } from "react";
-import { Hero, TiptapSuite, ListSlider } from "../../sections";
+import { Hero, TiptapSuite, ListSlider, Templates, UseCases } from "../../sections";
 
 export const Home: FC = () => {
-    return (
-        <>
-            <Hero />
-            <TiptapSuite />
-            <ListSlider />
-        </>
-    );
+  return (
+    <>
+      <Hero />
+      <TiptapSuite />
+      <ListSlider />
+      <Templates />
+      <UseCases />
+    </>
+  );
 };
