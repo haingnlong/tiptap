@@ -1,0 +1,59 @@
+.link {
+  border-radius: 10px;
+  align-items: center;
+  padding: 12px 10px 10px;
+  font-size: 16px;
+  line-height: 1.1;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  grid-column-gap: 8px;
+  color: white;
+  background-color: #141414f5;
+  cursor: pointer;
+  font-family: "PolySans Slim", sans-serif;
+  transition: scale 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    transform 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    border-radius 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.25s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(101%) contrast(104%);
+}
+
+.link *, .link::after {
+  transition: scale 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    transform 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    border-radius 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.25s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link:hover {
+  border-radius: 15px;
+}
+
+.link:hover span {
+  transform: translateX(20px);
+}
+
+.link:hover img, .link:hover:after {
+  transform: translateX(36px);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: -18px;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-size: contain;
+  mask: url(../../../assets//next-arrow.svg) no-repeat center / contain;
+  background-color: white;
+}
+
+.link-content > span {
+  margin-top: 2px;
+}
